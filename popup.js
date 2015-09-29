@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
       renderStatus('Search term: ' + url + '\n' +
           'Google image search result: ' + imageUrl);
       var imageResult = document.getElementById('image-result');
-      var frame = document.getElementById('iframe');
+      //var frame = document.getElementById('iframe');
       // Explicitly set the width/height to minimize the number of reflows. For
       // a single image, this does not matter, but if you're going to embed
       // multiple external images in your page, then the absence of width/height
@@ -110,10 +110,10 @@ document.addEventListener('DOMContentLoaded', function() {
       ///imageResult.width = width;
       ///imageResult.height = height;
 
-      frame.src = "http://www.w3schools.com";
+      ////frame.src = "http://www.w3schools.com";
       ////frame.src = "https://www.google.com/maps/dir/Henderson+Park,+4301+North+Henderson+Road,+Arlington,+VA/13597+Brewerton+Ct,+Chantilly,+VA/@38.9030276,-77.3301513,22014m/data=!3m1!1e3!4m15!4m14!1m5!1m1!1s0x89b7b42266520a11:0x800a8e4705f24cf1!2m2!1d-77.110363!2d38.874521!1m5!1m1!1s0x89b645b046bc1287:0xc6ae91f9825251e7!2m2!1d-77.414683!2d38.857246!3e0!5i2?hl=en";
-      frame.width = "700px";
-      frame.height = "600px";
+      ////frame.width = "700px";
+      ////frame.height = "600px";
       imageResult.src = imageUrl;
       imageResult.hidden = false;
 
